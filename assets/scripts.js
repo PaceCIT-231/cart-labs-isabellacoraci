@@ -31,7 +31,6 @@ function addToCart(cookie) {
 function checkout() {
     console.log('User is checking out.')
     //Let your customer know how many items they are purchasing and the price
-    prompt(`Item Count: ${itemCount} Total Cost: ${currentPrice}`)
     prompt(`What is your name and address so we can bill you and send you your purchases?`)
     currentPrice = 0
     itemCount = 0
