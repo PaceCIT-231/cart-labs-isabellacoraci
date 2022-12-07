@@ -1,16 +1,26 @@
 const cart = {
     currentPrice: 0,
     items: [],
+    
     addItem: function(cookie, price) {
         // add a cookie (string) to the items array
     this.items.push(cookie)
         //add the price (number) to the currentPrice properties
     this.currentPrice= this.currentPrice + price 
     },
+
     clear: function() {
         //reset the currentPrice and items properties
         this.currentPrice= 0
         this.items= []
+    },
+
+    getSummary: function() {
+        let summary = `<p>Number of Items: ${this.items.length}</p>
+            <h4>Details</h4>
+            <p>${this.items.join('<br>')}</p>
+            <p>Total Price: $${this.currentPrice}</p>`
+        return summary
     },
 }
 
