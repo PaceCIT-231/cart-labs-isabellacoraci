@@ -45,11 +45,12 @@ function addToCart(cookie) {
 function checkout() {
     console.log('User is checking out.')
     //Let your customer know how many items they are purchasing and the price
+    window.alert(`Item Count: ${cart.items.length} Total Cost: ${cart.currentPrice}`)
     prompt(`What is your name and address so we can bill you and send you your purchases?`)
-    currentPrice = 0
-    itemCount = 0
-    document.getElementById("cartItems").innerHTML= itemCount
-    document.querySelector(".hoverText").innerHTML = currentPrice
+    cart.clear()
+    document.querySelector(".hoverText").innerHTML = cart.currentPrice
+    console.log(cart)
+    document.getElementById("cartItems").innerHTML= cart.items.length
 }
 
 
