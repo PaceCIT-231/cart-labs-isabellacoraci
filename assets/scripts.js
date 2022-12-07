@@ -58,3 +58,12 @@ function darkMode() {
 	document.querySelector("body").style.backgroundColor="navy"
     document.querySelector("body").style.color="white"
 }
+
+
+function clearCart() {
+    cart.clear()
+    document.querySelector(".hoverText").innerHTML = cart.currentPrice
+    console.log(cart)
+    document.getElementById("cartItems").innerHTML= cart.items.length
+}
+
