@@ -57,8 +57,8 @@ function checkout() {
     //Let your customer know how many items they are purchasing and the price
     window.alert(`Item Count: ${cart.items.length} Total Cost: ${cart.currentPrice}`)
 
-    document.getElementById("summary-body").innerHTML= cart.getSummary
-    document.getElementById("summary").style.display= block
+    document.getElementById("summary-body").innerHTML= cart.getSummary()
+    document.getElementById("summary").style.display= "block"
     
     cart.clear()
     document.querySelector(".hoverText").innerHTML = cart.currentPrice
