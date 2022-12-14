@@ -79,3 +79,4 @@ function clearCart() {
     document.getElementById("cartItems").innerHTML= cart.items.length
 }
 
+clearcart.addEventListener("mousedown", clearCart)
