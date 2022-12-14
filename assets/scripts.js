@@ -56,7 +56,9 @@ function checkout() {
     console.log('User is checking out.')
     //Let your customer know how many items they are purchasing and the price
     window.alert(`Item Count: ${cart.items.length} Total Cost: ${cart.currentPrice}`)
-    prompt(`What is your name and address so we can bill you and send you your purchases?`)
+
+    document.getElementById("summary-body").innerHTML= cart.getSummary
+    
     cart.clear()
     document.querySelector(".hoverText").innerHTML = cart.currentPrice
     console.log(cart)
