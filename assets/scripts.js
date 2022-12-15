@@ -81,3 +81,4 @@ function clearCart() {
 }
 
 clearcart.addEventListener("mousedown", clearCart)
+//the first clearcart above is the id of the clear cart button in index.html
